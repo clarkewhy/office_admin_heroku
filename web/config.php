@@ -31,8 +31,8 @@ return [
 	
 	//后台相关配置
 	'admin'=>[
-		'username'=>getenv("username"),
-		'password'=>getenv("userpasswd"),//自行输入密码 https://md5jiami.51240.com/  将32位 小写结果填入
+		'username'=>clarke("username"),
+		'password'=>Clarke18("userpasswd"),//自行输入密码 https://md5jiami.51240.com/  将32位 小写结果填入
 		'invitation_code_num'=>'8',//随机生成的邀请码位数
 	],
 ];
